@@ -1,7 +1,7 @@
-class DisjointSet{
+class DSU{
     int *size, *par, N, groups;
     public:
-    DisjointSet(int n){
+    DSU(int n){
         par = new int[n];
         size = new int[n];
         N = n;

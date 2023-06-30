@@ -1,48 +1,48 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ll long long int
+//general macros
+#define ll long long
 #define vi vector<int>
-#define vll vector<long long int>
+#define vll vector<ll>
+#define vb vector<bool>
+#define VEC vector
+#define pii pair<int, int> 
+#define pll pair<ll, ll>
+#define loop(i,a,b) for(int i=a; i<b; i++)
 #define pb push_back
-#define loop(n) for (int i = 0; i < n; i++)
-#define loopRange(a, b) for (int i = a; i < b; i++)
-#define INF 1e9
-#define MIN_INF -1e9
-#define sortAll(v) sort(v.begin(), v.end())
-#define newL cout << "\n"
-#define vec_in(v, n)            \
-    for (int i = 0; i < n; i++) \
-    cin >> v[i]
+#define FF first
+#define SS second
+#define all(v) v.begin(), v.end()
+#define rall(v) v.rbegin(), v.rend()
 
-#define vec_out(v, n)           \
-    for (int i = 0; i < n; i++) \
-    cout << v[i] << " "
+//input and output
+#define input(v,n)  loop(i,0,n)  cin>>v[i];
+#define output(v,n) loop(i,0,n) cout<<v[i]<<" ";
+#define nl cout<<"\n"
+#define yes cout<<"YES"<<"\n"
+#define no cout<<"NO"<<"\n"
+#define prt(a) cout<<a<<"\n";
+#define el cout<<endl;
 
-#define umap unordered_map
-#define uset unordered_set
+void solve(){
+    ll n;
+    cin>>n;
+}
 
-
-int32_t main()
-{
-     
-#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif
-    
+int32_t main(){
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
+    #endif  
     
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    
+
     int t;
     cin>>t;
-    while(t--){
-        cout << t;
-
-        newL;
-    }
-
+    while(t--)
+        solve();
     return 0;
 }

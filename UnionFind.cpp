@@ -18,9 +18,15 @@ class DSU{
         return par[u] = getPar(par[u]);
     }
 
+    int getSize(int u){
+        return size[getPar(u)];
+    }
+
     void unionBySize(int u, int v){
         int pu = getPar(u);
         int pv = getPar(v);
+        if(pu == pv)
+            return;
 
         if(size[pu] > size[pv]){
             size[pu] += size[pv];

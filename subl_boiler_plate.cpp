@@ -22,12 +22,12 @@ using namespace std;
 #define nl cout<<"\n"
 #define yes cout<<"YES"<<"\n"
 #define no cout<<"NO"<<"\n"
-#define prt(a) cout<<a<<"\n";
+#define prt(a) cout<<a<<"\n"
 #define el cout<<endl;
 
 void solve(){
     ll n;
-    cin>>n;
+    cin >> n;
 }
 
 int32_t main(){

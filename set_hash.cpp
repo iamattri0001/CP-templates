@@ -18,7 +18,7 @@ long long binpow(long long a, long long b, long long MOD) {
 }
 
 
-long long set_hash(vector<int> &v){
+long long set_hash(vector<int> &v, long long H, long long K, long long MOD){
     long long h = 0;
     for(auto &i: v)
         h = (h + binpow(i + K, H, MOD)) % MOD;

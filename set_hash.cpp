@@ -2,7 +2,7 @@ const vector<long long> PRIMES = {(long long)1e9+7, (long long)1e9+9, (long long
 
 const long long K = 8234245; //random number (big)
 const long long H = 67; //random number (small)
-const long long MOD = PRIMES[1]; //change it to some other prime (1e9 + 9, )
+const long long MOD = PRIMES[1]; //change it to some other big prime
 
 
 

@@ -2,8 +2,7 @@ class DSU {
     vector<int> par, siz;
 public:
     DSU(int n) : par(n + 1, 1), siz(n + 1) {
-        for (int i = 0; i <= n; i++)
-            par[i] = i;
+        iota(par.begin(), par.end(), 0);
     }
 
     bool merge(int u, int v) {

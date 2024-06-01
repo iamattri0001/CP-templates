@@ -94,3 +94,6 @@ struct SegUpdate {
         n.value = value;
     }
 };
+
+
+// auto s = SegTree<SegNode, SegUpdate>(n, arr);

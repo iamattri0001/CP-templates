@@ -14,7 +14,7 @@ public:
         for (int i = 1; i <= n; i++) {
             len[i] = max(0, min(high - i, len[low + high - i]));
             while (s[i - len[i]] == s[i + len[i]])  len[i]++;
-            if (i + len[i] > high)  low = i - len[i];   high = i + len[i];
+            if (i + len[i] > high)  low = i - len[i],   high = i + len[i];
         }
     }
 

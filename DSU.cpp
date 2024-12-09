@@ -1,11 +1,10 @@
 class DSU {
     vector<int> par, siz;
-public:
-    DSU(int n) : par(n + 1, 1), siz(n + 1) {
-        iota(par.begin(), par.end(), 0);
-    }
 
-    bool merge(int u, int v) {
+public:
+    DSU(int n) : par(n), siz(n, 1) { iota(par.begin(), par.end(), 0); }
+
+    bool unite(int u, int v) {
         u = find(u), v = find(v);
         if (u == v)
             return 0;

@@ -25,10 +25,13 @@ public:
     int getEvenLen(int i) { return len[2 * i + 1] - 1; }
 
     // starting idx of odd len palin, center at i
-    int getOddIndex(int i) { return i - (getOddLen(i) - 1) / 2; }
+    int getOddStartIndex(int i) { return i - (getOddLen(i) - 1) / 2; }
+    int getOddEndIndex(int i) { return i + (getOddLen(i) - 1) / 2;  }
 
     // starting idx of even len palin, center at i and i - 1
-    int getEvenIndex(int i) { return i - getEvenLen(i) / 2; }
+    int getEvenStartIndex(int i) { return i - getEvenLen(i) / 2; }
+    int getEvenEndIndex(int i) { return i + getEvenLen(i) / 2 - 1;   }
+
 
     // verify if s[i...j] is palin
     bool check(int i, int j) {
